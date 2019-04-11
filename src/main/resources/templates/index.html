@@ -9,5 +9,13 @@
 
 <h1>Hello World!</h1>
 
+
+
+<tr th:each="instance : ${wapi-manager.metrics}">
+    <td th:text="${instance.key}">keyvalue</td>
+    <td th:text="${instance.value.numOfData}">num</td>
+</tr>
+
+
 </body>
 </html>

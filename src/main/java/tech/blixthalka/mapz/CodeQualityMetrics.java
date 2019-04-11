@@ -2,7 +2,9 @@ package tech.blixthalka.mapz;
 
 import lombok.*;
 
-@Data
+import java.util.Map;
+
+@Value
 public class CodeQualityMetrics {
-    String metric;
+    Map<String, String> metrics;
 }

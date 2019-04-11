@@ -4,6 +4,6 @@ import reactor.core.publisher.Mono;
 
 public interface CodeQualityFetcher {
 
-    Mono<CodeQualityMetrics> fetchCodeQuality();
+    Mono<CodeQualityMetrics> fetchCodeQuality(String project);
 
 }
